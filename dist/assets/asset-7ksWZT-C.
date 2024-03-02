@@ -1,0 +1,929 @@
+/* 전체적인 디자인 수정하기(와이어 프레임과 동일하게) */
+
+
+/* login 1 */
+
+body {
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.login1_wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    height: 80vh;
+    text-align: left;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.maintxt {
+    text-align: left;
+    margin-top: 4vh;
+    margin-left: 92vh;
+    margin-bottom: 0.2vh;
+}
+
+.txt1 {
+    font-size: 2.5rem;
+    width: 70vw;
+    font-weight: 730;
+    margin-bottom: 0.65vh;
+    letter-spacing: 1.5px;
+    margin-top: 2.5vh;
+    line-height: 3.2rem;
+    white-space: pre-line;
+}
+
+.txt2 {
+    position: relative;
+    bottom: 6vh;
+    font-size: 0.625rem;
+    width: 100vw;
+    margin-top: 8vh;
+    line-height: 2.2vh;
+    letter-spacing: 0.1px;
+}
+
+#login1_submit_btn {
+    padding: 2.3vh;
+    font-size: 1.25rem;
+    background-color: white;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #bfbaba;
+    border-radius: 50px;
+    margin-bottom: 10vh;
+    width: 25vw;
+    align-items: center;
+    margin: 10vh auto;
+}
+
+@media screen and (max-width: 768px) {
+    .maintxt {
+        margin-right: 211vw;
+    }
+    .txt1 {
+        width: 80vw;
+    }
+    .txt2 {
+        width: 80vw;
+    }
+    #login1_submit_btn {
+        width: 80vw;
+    }
+}
+
+
+/* login 2 */
+
+.login2_wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+.login2_wrap p {
+    font-size: 2.2rem;
+}
+
+.bold_text {
+    font-weight: bold;
+}
+
+.Gloginbox {
+    font-size: 1.3rem;
+    border: none;
+    width: 28vw;
+    height: 3em;
+    text-align: center;
+    padding: 4%;
+    margin: 0 auto;
+    display: block;
+}
+
+.Gloginbox:hover {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 767px) {
+    .login2_wrap {
+        height: 60vh;
+    }
+    .Gloginbox {
+        padding: 6%;
+        width: 90vw;
+        margin-top: 11vh;
+    }
+}
+
+
+/* login 3 */
+
+.Login3_txt1 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin: 0 auto;
+    padding-top: 10vh;
+    width: 90vw;
+    font-weight: 400;
+}
+
+strong {
+    font-weight: bolder;
+}
+
+.options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.option {
+    width: 40vw;
+    height: 12vh;
+    background-color: #f3f3f3;
+    font-size: 1.3rem;
+    font-weight: 600;
+    border-radius: 20px;
+    text-align: center;
+    margin: 1.5vh;
+    cursor: pointer;
+    flex-basis: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.selected {
+    background-color: #ED8C37;
+    color: white;
+}
+
+#SelectclearBtn {
+    padding: 2.3vh;
+    font-size: 1.25rem;
+    background-color: #ED8C37;
+    color: #ffffff;
+    border: #ED8C37;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50px;
+    margin-bottom: 10vh;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 6vh;
+    width: 65vw;
+    cursor: pointer;
+}
+
+#SelectclearBtn:disabled {
+    background-color: grey;
+    color: white;
+    width: 65vw;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .options {
+        width: 30vw;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        margin: 0 auto;
+    }
+    #SelectclearBtn {
+        width: 20vw;
+        cursor: pointer;
+    }
+    #SelectclearBtn:disabled {
+        background-color: grey;
+        color: white;
+        width: 20vw;
+        cursor: pointer;
+    }
+}
+
+
+/* login 4  */
+
+.Login4_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+.Login4_text {
+    text-align: center;
+    margin-top: 12vh;
+    font-size: 2rem;
+}
+
+input[type='text'] {
+    width: 40%;
+    height: 5%;
+    border-radius: 20px;
+    margin-top: 1.2vh;
+    padding: 2%;
+    border: none;
+    background-color: rgb(242, 242, 242);
+    color: black;
+    font-size: 1.2rem;
+}
+
+.wrap {
+    width: 100%;
+}
+
+.StartBtn[type="submit"] {
+    padding: 2.3vh;
+    font-size: 1.25rem;
+    text-align: center;
+    background-color: #313030;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50px;
+    margin-bottom: 10vh;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 12vh;
+    margin-bottom: 6vh;
+    cursor: pointer;
+    border: 1px solid #BFBABA;
+    border-radius: 50px;
+    margin-bottom: 10vh;
+    width: 25vw;
+    align-items: center;
+    margin: 10vh auto;
+}
+
+.StartBtn[type="submit"]:disabled {
+    background-color: grey;
+    color: white;
+    border: 2px solid grey;
+}
+
+button[type="submit"]:enabled {
+    cursor: pointer;
+    background-color: #ED8C37;
+}
+
+form #myInfo {
+    margin-top: 6vw;
+    padding: 1.2%;
+    margin-bottom: 10%;
+}
+
+.Login4_input {
+    text-align: center;
+    margin-top: 11vh;
+}
+
+.gender_selector {
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+}
+
+.gender_selector input[type='radio'] {
+    margin-right: 0.5rem;
+    width: 20px;
+    height: 20px;
+}
+
+.gender_selector label {
+    font-size: 1.6rem;
+}
+
+#gender {
+    width: 44%;
+    height: 5%;
+    border-radius: 20px;
+    margin-top: 2vh;
+    padding: 2.2%;
+    font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 767px) {
+    .Login4_wrap {
+        height: 110vh;
+    }
+    input[type='text'] {
+        width: 80%;
+        height: 8%;
+        margin-top: 1.2vh;
+        padding: 2.2%;
+        font-size: 1.6rem;
+    }
+    #StartBtn {
+        margin-top: 3vh;
+        width: 50vw;
+        height: 30%;
+        font-size: 1.2rem;
+        padding: 4%;
+    }
+    form #myInfo {
+        margin-top: 3vh;
+    }
+    .Login4_input {
+        margin-top: 8vh;
+    }
+    #gender {
+        width: 84%;
+    }
+}
+.HomeWrap{
+    font-size: 1.3rem;
+}
+
+.Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100000000vh; 
+}
+
+.Content1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    padding: 20px;
+}
+
+.home_textbox {
+    position: relative;
+    left: 15vw;
+    flex: 1;
+    font-size: 1.67em;
+}
+
+.Moodlets {
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+    padding: 1.2em;
+    width: 10%;
+    height: 18vh;
+    position: relative;
+    right: 18vw;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.RootineArr {
+    margin-top: 10em;
+    color: #ED8C37;
+    margin-top: 20px; 
+    text-align: center;
+}
+
+button{
+    border: none;
+    color: white;
+}
+#goRoutine{
+    color: blue;
+    text-decoration: underline blue;
+}
+.modal-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .div1,
+  .div2,
+  .div3,
+  .div4,
+  .div5,
+  .div6,
+  .div7,
+  .div8,
+  .div9 {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #333;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .div1 {
+    background-color: #ffcccb; 
+  }
+  
+  .div2 {
+    background-color: #ffb6c1;
+  }
+  
+  .div3 {
+    background-color: #ff69b4;
+  }
+  
+  .div4 {
+    background-color: #dda0dd;
+  }
+  
+  .div5 {
+    background-color: #ba55d3;
+  }
+  
+  .div6 {
+    background-color: #9370db;
+  }
+  
+  .div7 {
+    background-color: #8a2be2;
+  }
+  
+  .div8 {
+    background-color: #9400d3;
+  }
+  
+  .div9 {
+    background-color: #800080;
+  }
+  
+  .close-modal-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+  }
+  
+.Nav {
+    background-color: white;
+    border-bottom: 0.5px solid black;
+    align-items: center;
+    text-align: right;
+    margin-bottom: 0 auto;
+    font-size: 208%;
+    height: 30%;
+}
+
+.Logo_nav {
+    vertical-align: left;
+    margin-left: 2vw;
+    margin-right: 55vw;
+    margin-bottom: 1vh;
+    width: 20%;
+    height: auto;
+}
+
+.nav-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #ED8C37;
+}
+
+.nav-menu li {
+    text-align: left;
+    cursor: pointer;
+    font-size: 1.3rem;
+    line-height: 2.2em;
+    transition: font-size 0.4s ease;
+    padding-left: 2vw;
+}
+
+.nav-menu li:hover {
+    background-color: #efad43;
+    font-size: 1.7rem;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.MypageIcon,
+.NavIcon {
+    cursor: pointer;
+    padding-top: 3vh;
+    padding-bottom: 1.5vh;
+    margin-right: 2vw;
+}
+
+.NavIcon {
+    margin-left: 3vw;
+}
+body {
+    margin: 0 auto;
+    overflow: visible;
+    font-family: "GowunDodum";
+}
+
+.Routine_wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+
+/* 
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navBtn1,
+.navBtn2 {
+    padding-top: 3vh;
+    padding-bottom: 1.5vh;
+    margin-left: auto;
+}
+
+.navBtn2 {
+    margin-left: 4vw;
+    margin-right: 4vw;
+}
+
+hr {
+    border: 0.5px solid black;
+} */
+
+.txt {
+    width: 80vw;
+    height: 19vh;
+}
+
+.txt1 {
+    font-size: 1.56rem;
+    margin-left: 6vw;
+    text-align: left;
+}
+
+.txt2 {
+    font-size: 0.8rem;
+    width: 40vw;
+    margin-left: 6vw;
+    margin-top: 6vh;
+    margin-bottom: 0vh;
+    text-align: left;
+}
+
+.txt3 {
+    font-size: 1.25rem;
+    color: #BFBABA;
+    margin-top: 0vh;
+    margin-left: 6vw;
+    text-align: left;
+}
+
+.gotoroutine {
+    margin-left: 6vw;
+}
+
+.btn {
+    display: flex;
+    justify-content: space-between;
+    margin: 6vw;
+}
+
+.inactive {
+    border: 0.5px solid black;
+    border-radius: 50px;
+    background-color: white;
+    width: 18vw;
+    height: 4.5vh;
+}
+
+.inactive:hover {
+    cursor: pointer;
+}
+
+.active:hover {
+    cursor: pointer;
+}
+
+.active {
+    background-color: #ED8C37;
+    border: 0.3px solid black;
+    border-radius: 50px;
+    width: 18vw;
+    height: 4.5vh;
+}
+
+.go {
+    border: 0.2px solid rgb(131, 131, 131);
+    border-radius: 20px;
+    width: 85vw;
+    height: 10vh;
+    font-size: 1.4rem;
+    text-align: left;
+    align-items: center;
+    display: flex;
+    padding-left: 5vw;
+    margin-bottom: 4vh;
+    margin-top: 4vh;
+    font-weight: 100;
+    color: black;
+    background-color: white;
+}
+
+.main_box {
+    border: 0.2px solid rgb(131, 131, 131);
+    border-radius: 20px;
+    width: 85vw;
+    height: auto;
+    text-align: left;
+    align-items: center;
+    padding-left: 5vw;
+    margin-bottom: 4vh;
+    padding-top: 3vh;
+    display: inline-block;
+}
+
+.m_txt1 {
+    font-size: 1.5rem;
+}
+
+.m_txt2 {
+    font-size: 0.8rem;
+    color: #5B5B5B;
+    padding-bottom: 4vh;
+}
+
+.selectbox {
+    border-radius: 13px;
+    background-color: #F7F7F7;
+    height: 7vh;
+    width: 80vw;
+    margin-bottom: 2vh;
+    display: flex;
+}
+
+.txtbox {
+    font-size: 20px;
+    width: 65vw;
+    height: 3.8vh;
+    margin-left: 20px;
+    margin-top: 1.6vh;
+}
+
+.selectbox_btn {
+    color: #595656;
+    background-color: #D9D9D9;
+    border: none;
+    height: 3.8vh;
+    width: 12.5vw;
+    border-radius: 20px;
+    margin-top: 1.6vh;
+    margin-right: 2vw;
+}
+
+.select_all {
+    border: none;
+    background-color: white;
+    color: rgb(167, 167, 167);
+    margin-top: 8vh;
+    margin-bottom: 2vh;
+    width: 20vh;
+    height: 5vh;
+    font-size: 1.2rem;
+    text-align: center;
+    position: relative;
+    left: 47%;
+    transform: translateX(-50%);
+}
+
+.selectbox_btn:hover {
+    cursor: pointer;
+    background-color: #ED8C37;
+    color: white;
+}
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    max-height: 700px;
+    /* 넓은 화면에서는 최대 너비를 제한 */
+    box-sizing: border-box;
+    /* 패딩을 포함한 너비로 계산 */
+    width: 70%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+.modal-title {
+    margin: 0;
+    margin: auto;
+    padding-top: 13%;
+}
+
+.close-button {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.modal-body {
+    margin-bottom: 20px;
+}
+
+.modal-select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5%;
+    margin-bottom: 15%;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(232, 232, 232);
+}
+
+.modal-select:focus {
+    outline: none;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 20px;
+}
+
+.btn-add {
+    border: none;
+    cursor: pointer;
+    background-color: white;
+    font-weight: bold;
+    flex: 1;
+}
+
+.btn-add:hover {
+    color: #ED8C37;
+    cursor: pointer;
+}
+
+@media (min-width: 576px) {
+    /* 작은 태블릿 크기 */
+    .modal {
+        width: 80%;
+        /* 화면의 80%만 차지하도록 조정 */
+    }
+}
+
+@media (min-width: 768px) {
+    /* 중간 태블릿 크기 */
+    .modal {
+        width: 70%;
+        /* 화면의 70%만 차지하도록 조정 */
+    }
+}
+
+@media (min-width: 992px) {
+    /* 데스크탑 */
+    .modal {
+        width: 50%;
+        /* 화면의 50%만 차지하도록 조정 */
+    }
+}
+
+@media (min-width: 1200px) {
+    /* 큰 데스크탑 */
+    .modal {
+        width: 30%;
+        /* 화면의 30%만 차지하도록 조정 */
+    }
+}
+.container_map {
+    margin: auto 0;
+    padding: 0;
+    overflow-y: visible;
+    overflow: visible;
+    overflow-x: hidden;
+}
+
+.gMap {
+    width: 90vw;
+    height: 50vh;
+    margin: 0 auto;
+    display: flex;
+}
+
+.txt_map {
+    width: 80vw;
+    height: auto;
+    padding-top: 1vh;
+    margin-bottom: 2vh;
+}
+
+.txt1 {
+    padding-bottom: 1vh;
+}
+
+.txt2 {
+    font-size: 1rem;
+}
+
+.txt3 {
+    margin-bottom: 1vh;
+}
+
+.ul_map {
+    display: contents;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    margin-bottom: 2vh;
+}
+
+.li_map {
+    list-style-type: none;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    width: 90vw;
+    height: auto;
+    margin: 0 auto;
+    justify-content: center;
+    border-bottom: 0.5px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+}
+
+.li_wrap {
+    width: 60vw;
+}
+
+.place-name {
+    font-size: 1.2rem;
+    margin: 1vh 0;
+}
+
+.place-rating {
+    font-size: 0.8rem;
+    margin-bottom: 0.5vh;
+}
+
+.place-address {
+    font-size: 0.8rem;
+    margin-bottom: 0.5vh;
+    width: 60vw;
+}
+
+.place-phone {
+    float: right;
+    border: none;
+    background-color: white;
+}
+
+.a_map {
+    color: #ED8C37;
+}
+
+.toggle_btn {
+    border: none;
+    background-color: white;
+    color: #ED8C37;
+}
