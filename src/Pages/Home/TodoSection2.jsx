@@ -9,10 +9,12 @@ const TodoSection2Wrap = styled.div`
   margin-left: 35vw;
   margin-top: 5vh;
   height: auto;
+  font-weight: 100; 
 
   @media all and (min-width: 300px) and (max-width: 1023px) {
     width: 83vw;
     margin-left: 8.5vw;
+    font-weight: 100; 
   }
 `;
 
@@ -54,6 +56,7 @@ const TodoSection2Routine = styled.input`
   text-align: center;
   width: 75%;
   padding-top: 2px;
+  font-weight: 100;
   outline: none;
   text-decoration: ${({ completed }) => (completed ? "line-through" : "none")};
   text-decoration-thickness: ${({ completed }) =>
@@ -64,7 +67,6 @@ const TodoSection2Routine = styled.input`
 
   @media all and (min-width: 300px) and (max-width: 1023px) {
     height: 70px;
-    font-weight: 100;
   }
 `;
 
@@ -193,7 +195,7 @@ const TodoSection2 = ({ selectedTrackId }) => {
   const addRoutine = async () => {
     const token = localStorage.getItem("authToken");
     const content = "";
-  
+
     try {
       const response = await axios.post(
         `https://dofarming.duckdns.org/api/v1/routine/${selectedTrackId}?trackId=${encodeURIComponent(
@@ -207,9 +209,9 @@ const TodoSection2 = ({ selectedTrackId }) => {
           },
         }
       );
-  
+
       if (response.status === 200) {
-        fetchRoutines();
+        setRoutineList(prevRoutines => [...prevRoutines, response.data]);
       } else {
         console.error("루틴 추가 실패:", response.statusText);
       }
@@ -217,7 +219,7 @@ const TodoSection2 = ({ selectedTrackId }) => {
       console.error("루틴 추가 오류:", error);
     }
   };
-  
+
   const fetchRoutines = async () => {
     const token = localStorage.getItem("authToken");
   
@@ -298,7 +300,7 @@ const TodoSection2 = ({ selectedTrackId }) => {
   }, [selectedTrackId]);
 
   return (
-  <TodoSection2Wrap>
+  <TodoSection2Wrap style={{ fontWeight: 100 }}>
       {!hasRoutine && <Todoselect1 />}
       {hasRoutine && (
         <>
