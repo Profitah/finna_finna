@@ -23,9 +23,9 @@ const TextContainer = styled.div`
   justify-content: center;
   align-items: center;
 
-    @media screen and (min-width: 1280px) {
-            margin-bottom: 15vh;
-        }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 15vh;
+  }
 `;
 
 const StyledGoogleLoginButton = styled(GoogleLoginButton)`
@@ -41,7 +41,6 @@ const StyledGoogleLoginButton = styled(GoogleLoginButton)`
   }
 `;
 
-// Login2 컴포넌트 정의
 const Login2 = () => {
   // useNavigate 훅을 사용하여 라우터 제어
   const navigate = useNavigate(); 
@@ -123,6 +122,8 @@ const Login2 = () => {
     </Login2Container>
   );
 };
+
+// ...
 
 // 컴포넌트 내보내기
 export default Login2;

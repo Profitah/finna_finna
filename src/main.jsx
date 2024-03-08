@@ -13,6 +13,9 @@ import Reset from "./Pages/Mypage/Reset";
 import HomeAddPackage from "./Pages/Home/HomeAddPackage";
 import Todo from "./Pages/Home/Todo";
 import HomeSection2 from "./Pages/Home/HomeComponents/HomeSection2";
+import Board from "./Pages/Community/Board";  
+import Comment from "./Pages/Community/Comment";
+import WriteCommunity from "./Pages/Community/WriteCommunity";
 
 const root = document.getElementById("root");
 const rootElement = createRoot(root);
@@ -34,6 +37,9 @@ rootElement.render(
       <Route path="/HomeAddPackage/" element={<HomeAddPackage />} />
       <Route path="/Todo/" element={<Todo />} />
       <Route path="/HomeSection2/" element={<HomeSection2 />} />
+      <Route path="/Board/" element={<Board />} />
+      <Route path="/Comment/" element={<Comment />} />
+      <Route path="/WriteCommunity/" element={<WriteCommunity />} />
     </Routes>
   </Router>
 );
