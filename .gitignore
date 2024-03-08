@@ -106,7 +106,8 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-
+#Api
+.env
 
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,macos,windows,react,firebase
 .vercel
